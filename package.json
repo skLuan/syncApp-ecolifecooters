@@ -1,0 +1,37 @@
+{
+  "name": "ecolife-sync",
+  "version": "0.1.0",
+  "description": "Integración WooCommerce → Odoo (núcleo + adaptadores) para ecolifescooters.com",
+  "private": true,
+  "type": "module",
+  "main": "dist/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "migrate": "tsx src/db/migrate-cli.ts",
+    "migrate:prod": "node dist/db/migrate-cli.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@types/node": "^22.20.5",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.12.8",
+    "mysql2": "^3.15.3",
+    "pino": "^10.1.0",
+    "typescript": "~5.9.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.6",
+    "tsx": "^4.20.6",
+    "vitest": "^3.2.4"
+  }
+}

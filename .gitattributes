@@ -1,0 +1,4 @@
+# Finales de línea LF en el repo aunque se edite en Windows.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

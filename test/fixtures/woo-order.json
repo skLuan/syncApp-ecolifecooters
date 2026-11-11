@@ -1,0 +1,87 @@
+{
+  "id": 4521,
+  "parent_id": 0,
+  "number": "4521",
+  "status": "processing",
+  "currency": "EUR",
+  "date_created_gmt": "2026-11-27T10:15:00",
+  "customer_id": 0,
+  "customer_note": "Entregar por la tarde",
+  "discount_total": "8.26",
+  "discount_tax": "1.74",
+  "shipping_total": "4.95",
+  "shipping_tax": "1.04",
+  "total": "120.80",
+  "total_tax": "20.97",
+  "payment_method": "stripe",
+  "payment_method_title": "Tarjeta de crédito/débito",
+  "transaction_id": "pi_3QabcXYZ",
+  "billing": {
+    "first_name": "Laura",
+    "last_name": "García",
+    "company": "",
+    "address_1": "Calle Mayor 10",
+    "address_2": "3ºB",
+    "city": "Madrid",
+    "state": "M",
+    "postcode": "28013",
+    "country": "ES",
+    "email": "Laura.Garcia@Example.com",
+    "phone": "+34600111222"
+  },
+  "shipping": {
+    "first_name": "Laura",
+    "last_name": "García",
+    "company": "",
+    "address_1": "Avenida de la Paz 5",
+    "address_2": "",
+    "city": "Getafe",
+    "state": "M",
+    "postcode": "28901",
+    "country": "ES",
+    "phone": ""
+  },
+  "line_items": [
+    {
+      "id": 901,
+      "name": "Vinilo Ecoxtrem M41 Tank / Armored Claw Rojo - Completo",
+      "product_id": 3001,
+      "variation_id": 3005,
+      "quantity": 1,
+      "subtotal": "57.77",
+      "subtotal_tax": "12.13",
+      "total": "49.51",
+      "total_tax": "10.40",
+      "sku": "VIN-M41-CLAW-ROJO-COMP",
+      "price": 49.51
+    },
+    {
+      "id": 902,
+      "name": "Casco INTEGRA Sport negro",
+      "product_id": 2210,
+      "variation_id": 0,
+      "quantity": 1,
+      "subtotal": "53.63",
+      "subtotal_tax": "11.26",
+      "total": "45.37",
+      "total_tax": "9.53",
+      "sku": "CASCO-INTEGRA-NEG",
+      "price": 45.37
+    }
+  ],
+  "shipping_lines": [
+    {
+      "id": 950,
+      "method_title": "Envío estándar",
+      "method_id": "flat_rate",
+      "total": "4.95",
+      "total_tax": "1.04"
+    }
+  ],
+  "fee_lines": [],
+  "coupon_lines": [{ "id": 960, "code": "blackfriday10", "discount": "8.26" }],
+  "meta_data": [
+    { "id": 1, "key": "_billing_nif", "value": "12345678z" },
+    { "id": 2, "key": "_stripe_customer_id", "value": "cus_abc" }
+  ]
+}
