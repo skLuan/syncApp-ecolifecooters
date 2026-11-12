@@ -7,3 +7,6 @@ coverage/
 *.log
 .DS_Store
 Thumbs.db
+
+# Worktrees locales de Claude Code
+.claude/worktrees/
