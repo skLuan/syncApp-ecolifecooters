@@ -70,11 +70,15 @@ test/                  vitest (sin red ni base de datos)
 Requisitos: Node 22 (ver `.nvmrc`) y Docker.
 
 ```bash
-docker compose up -d          # MariaDB local
 cp .env.example .env          # y completa credenciales de prueba
+docker compose up -d          # MariaDB local (publica ${DB_PORT:-3306})
 npm install
 npm run dev                   # http://localhost:3000/health
 ```
+
+> Si `docker compose up -d` falla con `Bind for 0.0.0.0:3306 failed: port is already
+> allocated`, ya hay otro MySQL/MariaDB ocupando el puerto. Pon `DB_PORT=3307` en `.env`
+> y vuelve a levantar: compose publica ese puerto y la app se conecta al mismo.
 
 | Comando | Qué hace |
 |---|---|
